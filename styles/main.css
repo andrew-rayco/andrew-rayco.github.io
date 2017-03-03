@@ -3,14 +3,20 @@ html {
 }
 
 body {
-  background: #EFEEEB;
-  margin: 3em 0 5em;
+  animation: bodycolorchange 30s infinite;
+  -webkit-animation: bodycolorchange 30s infinite; /* Chrome and Safari */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   width: 70%;
   margin: 0 auto;
   text-align: center;
+  background: #e9ece5 repeat;
+  padding: 4em 7em;
 }
 
 h1, h2, h3, h4 {
@@ -25,6 +31,11 @@ h1 {
   margin-bottom: 48px;
 }
 
+.home {
+  padding-top: 2em;
+  height: calc(100vh - 50px);
+}
+
 .home h1 {
     margin-bottom: 0;
 }
@@ -35,11 +46,6 @@ h2 {
   padding-bottom: 1.5em;
   padding-top: .5em;
   font-weight: 200;
-}
-
-h3:first-child {
-  margin-top: 1em;
-  color: blue;
 }
 
 p {
@@ -92,6 +98,7 @@ ul {
 
 .home h2 {
   font-family: 'Lora';
+  margin-bottom: 2em;
 }
 
 .subtitle {
@@ -114,4 +121,30 @@ ul {
   margin-top: 4em;
   border-top: 2px solid #62656A;
   text-align: center;
+}
+
+
+
+
+/*
+* animation
+*/
+
+/* === body === */
+@keyframes bodycolorchange
+{
+  0%   {background: #e9ece5;}
+  25%  {background: #C3B299;}
+  50%  {background: #247BA0;}
+  75%  {background: #56BBA7;}
+  100% {background: #e9ece5;}
+}
+
+@-webkit-keyframes bodycolorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #e9ece5;}
+  25%  {background: #C3B299;}
+  50%  {background: #247BA0;}
+  75%  {background: #56BBA7;}
+  100% {background: #e9ece5;}
 }
