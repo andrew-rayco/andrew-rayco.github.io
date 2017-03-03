@@ -48,7 +48,7 @@ h2 {
   font-weight: 200;
 }
 
-p {
+p, dl {
 	color: #40434A;
 	font-family: 'Lora';
 	font-size: 18px;
@@ -69,19 +69,28 @@ a:hover, .active {
 	color: #202329;
 }
 
-img {
+.home img {
   border-radius: 50%;
   text-align: center;
 }
 
-.blog img {
+.contraption-image {
+  border-radius: 50%;
   height: 6em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 li {
-  list-style: none;
+    list-style: none;
+    color: #40434A;
+  	font-family: 'Lora';
+  	font-size: 18px;
+  	font-weight: 400;
+    padding: .5em 0;
+}
+
+nav li {
   display: inline-block;
   padding: 5px 1em;
   text-align: center;
@@ -89,7 +98,12 @@ li {
 
 ul {
   margin: 0;
+  padding-left: 0;
   padding-bottom: 2em;
+}
+
+dl {
+  text-align: center;
 }
 
 .home ul {
@@ -123,8 +137,9 @@ ul {
   text-align: center;
 }
 
-
-
+.half-width-img {
+  width: 50%;
+}
 
 /*
 * animation
