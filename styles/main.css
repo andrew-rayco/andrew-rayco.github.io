@@ -1,0 +1,102 @@
+
+body {
+  color: #2f4c54;
+  background: #f9f7f3;
+}
+
+.container {
+  margin-top: 1em;
+}
+
+h1, h2 {
+  color: #ad662b;
+}
+
+
+
+h1 {
+  font-family: 'Marcellus', serif;
+  line-height: 1em;
+}
+
+h1 span {
+  padding-left: 1em;
+}
+
+.title {
+  margin: 0.5em 0 1em;
+}
+
+h2, .logo {
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 1em;
+  letter-spacing: .1em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+h4, p {
+  font-family: 'PT Serif', serif;
+}
+
+h5 {
+  font-family: 'Ramabhadra', sans-serif;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: #f9f7f3;
+  letter-spacing: .1em;
+}
+
+nav {
+  display: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #2f4c54;
+  text-align: center;
+}
+
+.secondary-bg {
+  background: #abb6bb;
+}
+.secondary-bg:before {
+    content:"";
+    background-color:#abb6bb;
+    position: absolute;
+    height: 100%;
+    width: 4000px;
+    left: -2000px;
+    z-index: -1;
+}
+
+.sprint {
+  color: #f9f7f3;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: .8em;
+  letter-spacing: .1em;
+}
+
+.pf-icon {
+  width: 30%;
+  margin: 2em 30%;
+  opacity: 0.8;
+}
+
+.centreline:first-child div {
+  border-right: 1px solid red;
+}
+
+
+
+
+
+/* Google fonts */
+font-family: 'Marcellus', serif;
+font-family: 'Goudy Bookletter 1911', serif;
+font-family: 'Forum', cursive;
+font-family: 'Gabriela', serif;
+font-family: 'PT Serif', serif;
