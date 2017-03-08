@@ -1,54 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Time &amp; Habits | The Contrabulous Fabtraption of Professor Andratio Condnagel</title>
-    <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900%7CLora:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
+<html>
 
-  <body>
-    <div class="container blog">
+<head>
+  <title>Andrew &amp; Co.</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Forum|Goudy+Bookletter+1911|Marcellus|Gabriela|Ramabhadra|PT+Serif|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
 
-      <h2>The Contrabulous Fabtraption of Professor Andratio Condnagel</h2>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="c1-reflection-blog.html">Reflection Blog</a></li>
-          <li><a href="c1-time-and-habits-blog.html">Time &amp; Habits Blog</a></li>
-          <li><a class="active" href="t2-html-css-dom-p1.html">HTML, CSS &amp; the DOM</a></li>
-          <li><a href="t2-html-css-dom-p2.html">HTML, CSS &amp; the DOM II</a></li>
-          <li><a href="c2-emotional-intelligence.html">Emotional Intelligence</a></li>
-        </ul>
-      </nav>
+<body>
+  <div class="container blog">
 
-      <h1>HTML, CSS &amp; the DOM</h1>
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class="logo">Andrew &amp; Co.</h1></div>
+    </div>
+    <div class="row nav">
+      <div class="twelve columns">
+        <nav>
+          <input type="checkbox" id="nav" /><label for="nav"></label>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="c1-reflection-blog.html">Reflection</a></li>
+            <li><a href="c1-time-and-habits-blog.html">Habit</a></li>
+            <li class="navlist"><a class="active" href="#">Technical</a>
+              <ul class="sub-navlist">
+                <li><a class="active" href="t2-html-css-dom-p1.html">HTML, CSS &amp; DOM I</a></li>
+                <li><a href="t2-html-css-dom-p2.html">HTML, CSS &amp; DOM II</a></li>
+                <li><a href="t3-design-to-web-blog.html">Design to Web</a></li>
+              </ul>
+            </li>
+            <li><a href="c2-emotional-intelligence.html">Emotional</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-      <img class="contraption-image" src="../images/contraption.jpg" alt="illustration of an elaborate (though ineffective) flying contraption" />
-      <h3>My feature wishlist</h3>
-      <p>I love the hover nav feature in the <a href="http://1700laposte.com/mythologies/accueil">1700 la poste</a> site where each nav has a unique colour associated with it and that colour is reflected elsewhere on the page when you hover over the nav item.</p>
-      <p>For a long time I've loved the ever-changing colours on the <a href="http://www.webstock.org.nz/16/">2016 Webstock</a> site. Would that I had the design skills necessary to implement that so effectively. For now, I've just added the keyframe animation to the background body colour.</p>
-      <p>Since it seems we'll be adding more and more pages to our blog, I'd like a more scalable nav. I'm thinking something with a JavaScript toggle like Thomasin has on her blog. I just haven't figured out the way I want to do it yet.</p>
-      <p>Another nav feature that I'd like to implement (but don't really want on my blog site for now) is a sticky header that stays at the top of the browser window when you scroll down.</p>
+    <!-- === Page content === -->
+    <div class="row">
+      <div class="twelve columns">
 
-      <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
-      <p>Thanks to Udacity I can't think of an analogy beyond the house (HTML being the structure and CSS the decoration). So I googled for a more interesting analogy and I found <a href="https://mkpn.io/2013/the-big-green-ball-analogy/">The Big Green Ball Analogy</a>. Although it's for HTML, CSS and JavaScript, it's a pretty great way of simplifying it.</p>
-      <p><strong>The big green ball bounces when I drop it:</strong><br>
-        The HTML is the ball, it's just a ball. Until we use CSS to make it big and green. JavaScript makes the ball bounce, but only when I drop it.</p>
-      <dl>
-        <dt>HTML</dt>
-        <dd>The HTML is the pure content, what your website <em>says</em>. It should be presented semantically, that is, where content elements are marked up according to their importance (e.g. Headings and paragraphs), or type of content (e.g. lists and images).</dd>
-        <dt>CSS</dt>
-        <dd>The CSS is the presentation, how your website <em>looks</em>. Colours, typography, borders etc.</dd>
-        <dt>The DOM</dt>
-        <dd>The DOM (Document Object Model) is a little trickier to define. It's a tree-like structure (the model) of the current document where each element within is represented by a node (like a person in a family tree), and how they are all related. The DOM can be manipulated by JavaScript.</dd>
-      </dl>
+        <h1>HTML, CSS &amp; the DOM</h1>
 
-      <h3>What is meant by boxifying design?</h3>
-      <p>Essentially boxifying is to break down a design into small boxes, each representing a specific element on the page. All websites are structurally built from boxes that together form a grid.</p>
+        <h3>My feature wishlist</h3>
+        <p>I love the hover nav feature in the <a href="http://1700laposte.com/mythologies/accueil">1700 la poste</a> site where each nav has a unique colour associated with it and that colour is reflected elsewhere on the page when you hover over the nav
+          item.</p>
+        <p>For a long time I've loved the ever-changing colours on the <a href="http://www.webstock.org.nz/16/">2016 Webstock</a> site. Would that I had the design skills necessary to implement that so effectively. For now, I've just added the keyframe animation
+          to the background body colour.</p>
+        <p>Since it seems we'll be adding more and more pages to our blog, I'd like a more scalable nav. I'm thinking something with a JavaScript toggle like Thomasin has on her blog. I just haven't figured out the way I want to do it yet.</p>
+        <p>Another nav feature that I'd like to implement (but don't really want on my blog site for now) is a sticky header that stays at the top of the browser window when you scroll down.</p>
 
-      <h3>What is the box model?</h3>
-      <p>The Box Model defines the ultimate size of a box by calculating each of the four elements. From inside out, the elements are:</p>
+        <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
+        <p>Thanks to Udacity I can't think of an analogy beyond the house (HTML being the structure and CSS the decoration). So I googled for a more interesting analogy and I found <a href="https://mkpn.io/2013/the-big-green-ball-analogy/">The Big Green Ball Analogy</a>.
+          Although it's for HTML, CSS and JavaScript, it's a pretty great way of simplifying it.</p>
+        <p><strong>The big green ball bounces when I drop it:</strong><br> The HTML is the ball, it's just a ball. Until we use CSS to make it big and green. JavaScript makes the ball bounce, but only when I drop it.</p>
+        <dl>
+          <dt>HTML</dt>
+          <dd>The HTML is the pure content, what your website <em>says</em>. It should be presented semantically, that is, where content elements are marked up according to their importance (e.g. Headings and paragraphs), or type of content (e.g. lists and
+            images).</dd>
+          <dt>CSS</dt>
+          <dd>The CSS is the presentation, how your website <em>looks</em>. Colours, typography, borders etc.</dd>
+          <dt>The DOM</dt>
+          <dd>The DOM (Document Object Model) is a little trickier to define. It's a tree-like structure (the model) of the current document where each element within is represented by a node (like a person in a family tree), and how they are all related.
+            The DOM can be manipulated by JavaScript.</dd>
+        </dl>
+
+        <h3>What is meant by boxifying design?</h3>
+        <p>Essentially boxifying is to break down a design into small boxes, each representing a specific element on the page. All websites are structurally built from boxes that together form a grid.</p>
+
+        <h3>What is the box model?</h3>
+        <p>The Box Model defines the ultimate size of a box by calculating each of the four elements. From inside out, the elements are:</p>
         <ul>
           <li>content</li>
           <li>padding</li>
@@ -56,11 +79,24 @@
           <li>margin</li>
         </ul>
 
-      <img class="half-width-img" src="../images/box-model.png" alt="The box model" />
+        <img class="half-width-img" src="../images/box-model.png" alt="The box model" />
 
-      <div id="footer"></div>
-
+        <img class="pf-icon" src="../images/penny-farthing.png" alt="penny farthing" />
+      </div>
     </div>
+  </div>
 
-  </body>
+  <!-- === Footer === -->
+  <div class="container footer">
+    <div class="row">
+      <div class="six columns">
+        <p>&copy; 2017 Hihi Incorporated</p>
+      </div>
+      <div class="six columns">
+        <p><a href="mailto:andy@andycondon.com">andy@andycondon.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
