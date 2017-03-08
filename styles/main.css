@@ -1,9 +1,15 @@
 
-html { margin-left: calc(100vw - 100%); }
+html {
+  margin-left: calc(100vw - 101%);
+  overflow-x: hidden;
+  padding: 0;
+}
 
 body {
   color: #2f4c54;
   background: #f9f7f3;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .container {
