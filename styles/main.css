@@ -72,6 +72,14 @@ a {
   margin-top: 0;
 }
 
+.blog .logo a {
+  border-bottom: none;
+}
+
+.blog .logo a:hover {
+  color: #2f4c54;
+}
+
 .intro {
   padding-top: 3em;
   padding-bottom: 4em;
