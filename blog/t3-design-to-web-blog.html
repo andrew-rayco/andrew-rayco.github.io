@@ -49,18 +49,52 @@
 
         <h3>What is mobile first design, and why is it important?</h3>
         <p>Mobile first design is where a site or app is first designed and built for small devices, and then progressive enhancement is applied at larger breakpoints to exploit greater screen space.</p>
-        <p>Typically, mobile first design forces a development team to identify the key elements of content and strip away anything absolutely unnecessary until there is the screen space to accommodate it. Additionally, writing styles mobile first ensures the smaller devices (that tend to have less processing power) only need process the bare minimum styles, saving any additional features and styles for machines with greater screen space (and power).</p>
+        <p>Typically, mobile first design forces a development team to identify the key elements of content and strip away anything absolutely unnecessary until there is the screen space to accommodate it. Additionally, writing styles mobile first ensures
+          the smaller devices (that tend to have less processing power) only need process the bare minimum styles, saving any additional features and styles for machines with greater screen space (and power).</p>
 
         <h3>What frameworks are, and their pros and cons</h3>
-        <p>Frameworks are kits of pre-written code that are useful for implementing common challenges that one might find when developing sites or apps. Frameworks aim to save time and ensure a certain level of consistency, reducing the work required in development.</p>
-        <p>I mentioned the pros above. Time saving and consistency. Cons to using frameworks are that you rarely use all the functionality of the framework, so there's likely to be some code adding weight to your site unnecessarily. Something else that might be considered a con is that you don't necessarily know a framework as intimately as you might know something you have built yourself from scratch. As a result you might not have as good an understanding of how your project works as you could.</p>
+        <p>Frameworks are kits of pre-written code that are useful for implementing common challenges that one might find when developing sites or apps. Frameworks aim to save time and ensure a certain level of consistency, reducing the work required in
+          development.</p>
+        <p>I mentioned the pros above. Time saving and consistency. Cons to using frameworks are that you rarely use all the functionality of the framework, so there's likely to be some code adding weight to your site unnecessarily. Something else that might
+          be considered a con is that you don't necessarily know a framework as intimately as you might know something you have built yourself from scratch. As a result you might not have as good an understanding of how your project works as you could.</p>
 
         <h3>What a wireframe is and why we use it</h3>
-        <p>A wireframe is a high-level structural diagram that lays out where the key elements of the page are to be positioned. It's not a design so much as a blueprint. This gives the developer a plan to work off when setting up the foundations of the site without getting prematurely bogged down in design elements.</p>
+        <p>A wireframe is a high-level structural diagram that lays out where the key elements of the page are to be positioned. It's not a design so much as a blueprint. This gives the developer a plan to work off when setting up the foundations of the
+          site without getting prematurely bogged down in design elements.</p>
 
-        <img class="pf-icon" src="../images/penny-farthing.png" alt="penny farthing" />
+        <h3>The aspects of your wireframes you found difficult to implement, and why</h3>
+        <p>There were three things that I found challenging with this build. Only one of which was related to the framework.</p>
+        <p>There is an element on my homepage that I wanted to give a background colour that stretched the full width of the screen. However the element was inside the container div with a max-width property that limited my ability to apply a full-screen-width
+          background colour (it's becoming harder and harder to not mispell colour). I had to google for a solution and didn't fully understand the solution.</p>
+        <p>The second thing I found challenging was getting my sub-menu to work. Since there was a small gap between my main menu item and the submenu list, each time I'd try to hover over my submenu it would disappear. I spent a looong time trying to google
+          the solution of this problem before I realised I just needed to remove any vertical space between the two elements so the hover state wouldn't be 'broken'.</p>
+        <p>The final thing I really struggled with was the damn time limit! Styling a site is by far the most enjoyable part of web development for me, and I know we were supposed to set aside our 'perfectionism', but I couldn't stop until I was at least
+          not annoyed by any ugly or out-of-place elements. In a way I'm thankful for the time limit, else I'd still be tinkering away twelve years from now.</p>
       </div>
     </div>
+    <div class="container secondary-bg">
+      <div class="row">
+        <div class="twelve columns">
+          <h3 class="center">Wireframes sketched and photered in a generally sub-optimal fashion</h3>
+        </div>
+      </div>
+      <div class="row wireframes">
+        <div class="three columns">
+          <img class="full-width-img rotateimg90" src="../images/wireframe-index-page-mobile.jpg" alt="Wireframe index page mobile" />
+        </div>
+        <div class="three columns">
+          <img class="full-width-img rotateimg90" src="../images/wireframe-index-page-desktop.jpg" alt="Wireframe index page desktop" />
+        </div>
+        <div class="three columns">
+          <img class="full-width-img rotateimg90" src="../images/wireframe-index-page-mobile.jpg" alt="Wireframe blog page mobile" />
+        </div>
+        <div class="three columns">
+          <img class="full-width-img rotateimg90" src="../images/wireframe-index-page-desktop.jpg" alt="Wireframe blog page desktop" />
+        </div>
+      </div>
+    </div>
+
+    <img class="pf-icon" src="../images/penny-farthing.png" alt="penny farthing" />
   </div>
 
   <!-- === Footer === -->

@@ -310,6 +310,29 @@ nav ul li:hover > ul {
   width: 50%;
 }
 
+.full-width-img {
+  width: 100%;
+}
+
+.wireframes {
+  padding: 4em 0;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.secondary-bg h3 {
+  display: block;
+  text-align: center;
+}
+
+
+
 
 /*=== Footer ===*/
 .footer {
