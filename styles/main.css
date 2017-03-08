@@ -70,6 +70,10 @@ a {
   text-align: center;
 }
 
+.logo-img {
+  display: none;
+}
+
 
 
 
@@ -83,12 +87,20 @@ nav {
     display: none;
   }
 
+  .blog .logo {
+    display: block;
+  }
+
   nav {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
+  }
+
+  .blog nav {
+    margin-top: 0;
   }
 
   nav ul {
@@ -113,9 +125,17 @@ nav {
     border-bottom: none;
   }
 
-  nav a:hover, nav a:active {
+  nav a:hover, .active {
     border-bottom: solid 1px #ad662b;
     color: #2f4c54;
+  }
+
+  .logo-img {
+    display: inline;
+    float: left;
+    width: 10%;
+    padding: 0;
+    margin: 0;
   }
 }
 
