@@ -12,8 +12,6 @@ h1, h2 {
   color: #ad662b;
 }
 
-
-
 h1 {
   font-family: 'Marcellus', serif;
   line-height: 1em;
@@ -23,18 +21,21 @@ h1 span {
   padding-left: 1em;
 }
 
-.title {
-  margin: 0.5em 0 1em;
-}
-
-h2, .logo {
+h2, h3, .logo {
   font-family: 'Ramabhadra', sans-serif;
-  font-size: 1em;
   letter-spacing: .1em;
 }
 
 h2 {
   margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+h3 {
+  display: inline-block;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin-top: 1.8em;
 }
 
 h4, p {
@@ -49,9 +50,76 @@ h5 {
   letter-spacing: .1em;
 }
 
+a {
+  text-decoration: none;
+  color: #2f4c54;
+  border-bottom: solid 1px #ad662b;
+}
+
+.logo {
+  font-size: 1em;
+}
+
+.intro {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.title {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+
+
+
+/*=== Header ===*/
 nav {
   display: none;
 }
+
+@media screen and (min-width: 550px) {
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  nav ul {
+    width: 75%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    text-align: center;
+
+  }
+
+  nav li {
+    width: 100%;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: .65em;
+    letter-spacing: .2em;
+  }
+
+  nav a {
+    border-bottom: none;
+  }
+
+  nav a:hover, nav a:active {
+    border-bottom: solid 1px #ad662b;
+    color: #2f4c54;
+  }
+}
+
+
 
 .logo {
   text-transform: uppercase;
@@ -82,14 +150,76 @@ nav {
 
 .pf-icon {
   width: 30%;
-  margin: 2em 30%;
+  margin: 3em 33%;
   opacity: 0.8;
 }
 
-.centreline:first-child div {
-  border-right: 1px solid red;
+
+/*=== Blog page ===*/
+.blog h1 {
+  margin-top: 1em;
 }
 
+
+/*=== Footer ===*/
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5em 0;
+}
+
+.footer p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: .7em;
+  letter-spacing: .05em;
+  margin: 0.5em;
+}
+
+.sample-entry span {
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+/*=== Media queries ===*/
+
+@media screen and (min-width: 550px) {
+  /*== Sample section ==*/
+  .sample {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+
+  .sample-entry {
+    padding: 0 1em;
+    letter-spacing: .07em;
+  }
+
+  .sample-entry span {
+    font-size: 1.9em;
+  }
+
+  .sample-entry:first-child {
+    border-right: 1px solid #f9f7f3;
+  }
+
+  /*== Penny farthing icon ==*/
+  .pf-icon {
+    width: 15%;
+    margin: 3em 42.5%;
+  }
+
+  /*== Footer ==*/
+  .footer {
+    margin: 3em auto;
+  }
+
+}
 
 
 
@@ -100,3 +230,5 @@ font-family: 'Goudy Bookletter 1911', serif;
 font-family: 'Forum', cursive;
 font-family: 'Gabriela', serif;
 font-family: 'PT Serif', serif;
+font-family: 'Ramabhadra', sans-serif;
+font-family: 'Lato', sans-serif;
