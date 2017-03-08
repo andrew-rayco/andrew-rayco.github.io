@@ -60,6 +60,10 @@ a {
   font-size: 1em;
 }
 
+.blog .logo {
+  margin-top: 0;
+}
+
 .intro {
   padding-top: 3em;
   padding-bottom: 4em;
@@ -77,8 +81,10 @@ a {
 
 
 
+
+
 /*=== Header ===*/
-nav {
+nav ul {
   display: none;
 }
 
@@ -200,6 +206,72 @@ nav {
   font-size: 1.5em;
 }
 
+
+
+
+
+/*=== Mobile responsive nav ===*/
+label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 0px;
+}
+
+label:after{
+  content:'';
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #2f4c54;
+  box-shadow: 0px 6px 0px #2f4c54, 0px 12px 0px #2f4c54;
+  opacity: 0.5;
+}
+
+[type="checkbox"]:checked ~ ul {
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  list-style: none;
+  background: #f9f7f3;
+  text-transform: uppercase;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: .65em;
+  letter-spacing: .2em;
+  border-bottom: 1px solid #ad662b;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+[type="checkbox"]:checked ~ ul li {
+  text-align: center;
+}
+
+[type="checkbox"]:checked ~ ul a {
+  border-bottom: none;
+  color: #2f4c54;
+
+}
+
+[type="checkbox"]:checked ~ ul a:hover, [type="checkbox"]:checked ~ ul .active {
+  border-bottom: solid 1px #ad662b;
+  color: #2f4c54;
+}
+
+[type="checkbox"] {
+  display: none !important;
+}
+
+@media screen and (min-width: 550px) {
+  [type="checkbox"], label {
+      display: none !important;
+  }
+}
 
 
 
