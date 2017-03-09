@@ -99,6 +99,8 @@ a {
 
 
 
+
+
 /*=== Header and navigation ===*/
 nav ul {
   display: none;
@@ -163,6 +165,10 @@ label:after{
 
 .navlist {
   position: relative;
+}
+
+.navlist > a:hover {
+  cursor: text;
 }
 
 .sub-navlist {
