@@ -3,6 +3,7 @@ html {
   margin-left: calc(100vw - 101%);
   overflow-x: hidden;
   padding: 0;
+  margin: 0;
 }
 
 body {
@@ -308,6 +309,11 @@ nav ul li:hover > ul {
   letter-spacing: .1em;
 }
 
+.sample {
+  margin-bottom: 3em;
+}
+
+
 .pf-icon {
   width: 30%;
   margin: 3em 33%;
@@ -377,6 +383,7 @@ nav ul li:hover > ul {
 
 
 
+
 /*=== Media queries ===*/
 
 @media screen and (min-width: 550px) {
@@ -384,7 +391,7 @@ nav ul li:hover > ul {
   .sample {
     display: flex;
     justify-content: center;
-    margin-bottom: 3em;
+    margin-bottom: 8em;
   }
 
   .sample-entry {
