@@ -59,6 +59,14 @@ h5 {
   letter-spacing: .1em;
 }
 
+h6 {
+  font-family: 'Ramabhadra', sans-serif;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: #ad662b;
+  letter-spacing: .1em;
+}
+
 a {
   text-decoration: none;
   color: #2f4c54;
