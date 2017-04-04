@@ -1,0 +1,6 @@
+{
+  "list": [
+    { "item": "Shoe shine", "done": false},
+    { "item": "Shoes", "done": false }
+  ]
+}
