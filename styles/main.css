@@ -47,7 +47,7 @@ h3 {
   margin-top: 1.8em;
 }
 
-h4, p {
+h4, p, li {
   font-family: 'PT Serif', serif;
 }
 
@@ -101,6 +101,17 @@ a {
 
 .logo-img {
   display: none;
+}
+
+.content-list {
+  list-style: georgian;
+  background: #abb6bb;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+.content-list li {
+  margin-bottom: 1.3em;
 }
 
 
