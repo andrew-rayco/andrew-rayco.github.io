@@ -1,4 +1,3 @@
-
 html {
   margin-left: calc(100vw - 101%);
   overflow-x: hidden;
@@ -115,18 +114,15 @@ a {
 }
 
 
-
-
-
-
-
-
 /*=== Header and navigation ===*/
+
 nav ul {
   display: none;
 }
 
+
 /*=== Mobile responsive nav ===*/
+
 label {
   display: block;
   width: 30px;
@@ -137,8 +133,8 @@ label {
   top: 0px;
 }
 
-label:after{
-  content:'';
+label:after {
+  content: '';
   display: block;
   width: 20px;
   height: 3px;
@@ -147,7 +143,7 @@ label:after{
   opacity: 0.5;
 }
 
-[type="checkbox"]:checked ~ ul {
+[type="checkbox"]:checked~ul {
   display: block;
   z-index: 9999;
   position: absolute;
@@ -164,17 +160,16 @@ label:after{
   padding-top: 1em;
 }
 
-[type="checkbox"]:checked ~ ul li {
+[type="checkbox"]:checked~ul li {
   text-align: center;
 }
 
-[type="checkbox"]:checked ~ ul a {
+[type="checkbox"]:checked~ul a {
   border-bottom: none;
   color: #2f4c54;
-
 }
 
-[type="checkbox"]:checked ~ ul a:hover, [type="checkbox"]:checked ~ ul .active {
+[type="checkbox"]:checked~ul a:hover, [type="checkbox"]:checked~ul .active {
   border-bottom: solid 1px #ad662b;
   color: #2f4c54;
 }
@@ -187,7 +182,7 @@ label:after{
   position: relative;
 }
 
-.navlist > a:hover {
+.navlist>a:hover {
   cursor: text;
 }
 
@@ -204,7 +199,7 @@ label:after{
   list-style: none;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
   display: block;
 }
 
@@ -214,17 +209,14 @@ nav ul li:hover > ul {
 
 @media screen and (min-width: 550px) {
   [type="checkbox"], label {
-      display: none !important;
+    display: none !important;
   }
-
   .logo {
     display: none;
   }
-
   .blog .logo {
     display: block;
   }
-
   nav {
     display: flex;
     width: 100%;
@@ -232,42 +224,35 @@ nav ul li:hover > ul {
     margin-top: 1.5em;
     margin-bottom: 1em;
   }
-
   .blog nav {
     margin-top: 0;
   }
-
   nav ul {
-    width: 75%;
+    width: 100%;
     list-style: none;
     display: flex;
     padding: 0;
     text-align: center;
-
+    justify-content: center;
   }
-
   nav li {
-    width: 100%;
+    width: 15%;
     flex-wrap: nowrap;
     text-transform: uppercase;
     font-family: 'Ramabhadra', sans-serif;
     font-size: .65em;
     letter-spacing: .2em;
   }
-
   nav a {
     border-bottom: none;
   }
-
   nav a:hover, .active {
     border-bottom: solid 1px #ad662b;
     color: #2f4c54;
   }
-
   .navlist {
     position: relative;
   }
-
   .sub-navlist {
     display: none;
     position: absolute;
@@ -279,15 +264,12 @@ nav ul li:hover > ul {
     top: 0px;
     padding-top: 1em;
   }
-
-  nav ul li:hover > ul {
+  nav ul li:hover>ul {
     display: block;
   }
-
   .sub-navlist:hover {
     display: block;
   }
-
   .logo-img {
     display: inline;
     float: left;
@@ -296,10 +278,6 @@ nav ul li:hover > ul {
     margin: 0;
   }
 }
-
-
-
-
 
 .logo {
   text-transform: uppercase;
@@ -310,14 +288,15 @@ nav ul li:hover > ul {
 .secondary-bg {
   background: #abb6bb;
 }
+
 .secondary-bg:before {
-    content:"";
-    background-color:#abb6bb;
-    position: absolute;
-    height: 100%;
-    width: 4000px;
-    left: -2000px;
-    z-index: -1;
+  content: "";
+  background-color: #abb6bb;
+  position: absolute;
+  height: 100%;
+  width: 4000px;
+  left: -2000px;
+  z-index: -1;
 }
 
 .sprint {
@@ -332,7 +311,6 @@ nav ul li:hover > ul {
   margin-bottom: 3em;
 }
 
-
 .pf-icon {
   width: 30%;
   margin: 3em 33%;
@@ -341,6 +319,7 @@ nav ul li:hover > ul {
 
 
 /*=== Blog page ===*/
+
 .blog h1 {
   margin-top: 1em;
 }
@@ -364,7 +343,7 @@ nav ul li:hover > ul {
 }
 
 .rotateimg90 {
-  -webkit-transform:rotate(90deg);
+  -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -377,9 +356,8 @@ nav ul li:hover > ul {
 }
 
 
-
-
 /*=== Footer ===*/
+
 .footer {
   text-align: center;
   text-transform: uppercase;
@@ -399,10 +377,6 @@ nav ul li:hover > ul {
 }
 
 
-
-
-
-
 /*=== Media queries ===*/
 
 @media screen and (min-width: 550px) {
@@ -412,37 +386,30 @@ nav ul li:hover > ul {
     justify-content: center;
     margin-bottom: 8em;
   }
-
   .sample-entry {
     padding: 0 1em;
     letter-spacing: .07em;
   }
-
   .sample-entry span {
     font-size: 1.9em;
   }
-
   .sample-entry:first-child {
     border-right: 1px solid #f9f7f3;
   }
-
   /*== Penny farthing icon ==*/
   .pf-icon {
     width: 15%;
     margin: 3em 42.5%;
   }
-
   /*== Footer ==*/
   .footer {
     margin: 3em auto;
   }
-
 }
 
 
-
-
 /* Google fonts */
+
 font-family: 'Marcellus', serif;
 font-family: 'PT Serif', serif;
 font-family: 'Ramabhadra', sans-serif;
