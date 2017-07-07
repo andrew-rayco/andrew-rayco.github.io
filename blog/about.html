@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Andrew &amp; Co.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Forum|Goudy+Bookletter+1911|Marcellus|Gabriela|Ramabhadra|PT+Serif|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="container blog">
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class="logo"><a href="index.html">Andrew &amp; Co.</a></h1></div>
+    </div>
+    <div class="row nav">
+      <div class="twelve columns">
+        <nav>
+          <input type="checkbox" id="nav" /><label for="nav"></label>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- === Page content === -->
+    <div class="row">
+      <div class="twelve columns">
+
+        <h1>Scope</h1>
+
+        <h3>Explain to a non-tech friend what 'scope' is, and how it works in JavaScript</h3>
+        <p>Scope determines whether a variable is available or unavailable depending on where in the program it is initialised (created), and also depending on where it is (attempting to be) referenced.</p>
+        <p>Global variables are those that are accessible from the entire program. So it can be acted upon or referenced inside a function that's inside another function.</p>
+        <p>Local variables live shorter lives. They only exist within the function that they are initialised, and any functions also within that 'home' function. Outside of the 'home' function where it was created, the local variable is unaccessible.</p>
+        <p>Think of it like a set of boxes. A large one, a medium one and a tiny one. All inside each other like russian dolls. The tiny one inside the medium one that's inside the large.</p>
+        <ul class="content-list">
+          <li>A variable created in the large box can be seen through tiny little view holes in both the smaller boxes, so it is available for all.</li>
+          <li>A variable created in the medium box cannot be seen by the large box, but can be seen by both the medium and tiny boxes.</li>
+          <li>A variable created in the tiny box can only be seen in the tiny box.</li>
+        </ul>
+      </div>
+    </div>
+
+    <img class="pf-icon" src="../images/penny-farthing.png" alt="penny farthing" />
+  </div>
+
+  <!-- === Footer === -->
+  <div class="container footer">
+    <div class="row">
+      <div class="six columns">
+        <p>&copy; 2017 Hihi Incorporated</p>
+      </div>
+      <div class="six columns">
+        <p><a href="mailto:andy@andycondon.com">andy@andycondon.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
