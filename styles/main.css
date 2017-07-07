@@ -72,16 +72,6 @@ a {
   border-bottom: solid 1px #ad662b;
 }
 
-.large {
-  font-size: 2.5em;
-  margin-top: -.3em;
-}
-
-.about h3 {
-  margin-top: 0.8em;
-  margin-bottom: 0.3em;
-}
-
 .logo {
   font-size: 1em;
 }
@@ -215,6 +205,26 @@ nav ul li:hover>ul {
 
 .sub-navlist:hover {
   display: block;
+}
+
+
+/*=== About ===*/
+
+.large {
+  font-size: 2.5em;
+  margin-top: -.3em;
+}
+
+.about h3 {
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 910px) {
+  .six.columns.contact {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 550px) {
