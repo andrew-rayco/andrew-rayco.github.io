@@ -223,17 +223,13 @@ nav ul li:hover>ul {
 
 .portfolio-item {
   margin-bottom: 2em;
+  padding-top: 1em;
 }
 
-.odd img {
-  float: right;
+.portfolio-item h4 {
+  line-height: .9em;
 }
 
-.even p,
-.even h2,
-.even a {
-  text-align: right;
-}
 
 /*=== Media queries ===*/
 
