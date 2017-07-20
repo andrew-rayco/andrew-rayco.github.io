@@ -219,15 +219,23 @@ nav ul li:hover>ul {
 }
 
 
-/*=== About ===*/
+/*=== Work ===*/
 
 .portfolio-item {
   margin-bottom: 2em;
   padding-top: 1em;
 }
 
+.portfolio-item img {
+  border: 2px solid #eee;
+}
+
 .portfolio-item h4 {
   line-height: .9em;
+}
+
+.image-link {
+  border-bottom: 0;
 }
 
 
