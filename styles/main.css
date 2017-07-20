@@ -89,6 +89,10 @@ a {
 
 /*=== Header and navigation ===*/
 
+nav ul {
+  display: none;
+}
+
 .logo {
   font-size: 1em;
 }
@@ -228,11 +232,10 @@ nav ul li:hover>ul {
 
 .portfolio-item img {
   border: 2px solid #eee;
+  max-width: 100%;
 }
 
-.portfolio-item h4 {
-  line-height: .9em;
-}
+
 
 .image-link {
   border-bottom: 0;
@@ -310,6 +313,9 @@ nav ul li:hover>ul {
   }
   .sub-navlist:hover {
     display: block;
+  }
+  .portfolio-item h4 {
+    line-height: .9em;
   }
 }
 
