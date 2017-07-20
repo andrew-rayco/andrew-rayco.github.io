@@ -16,6 +16,9 @@ body {
   margin-top: 1em;
 }
 
+
+/*=== Typography ===*/
+
 h1, h2 {
   color: #ad662b;
 }
@@ -72,36 +75,6 @@ a {
   border-bottom: solid 1px #ad662b;
 }
 
-.logo {
-  font-size: 1em;
-}
-
-.blog .logo {
-  margin-top: 0;
-}
-
-.blog .logo a {
-  border-bottom: none;
-}
-
-.blog .logo a:hover {
-  color: #2f4c54;
-}
-
-.intro {
-  padding-top: 3em;
-  padding-bottom: 4em;
-}
-
-.title {
-  margin: 0 0 2em;
-  text-align: center;
-}
-
-.logo-img {
-  display: none;
-}
-
 .content-list {
   list-style: georgian;
   background: #abb6bb;
@@ -116,8 +89,20 @@ a {
 
 /*=== Header and navigation ===*/
 
-nav ul {
-  display: none;
+.logo {
+  font-size: 1em;
+}
+
+.blog .logo {
+  margin-top: 0;
+}
+
+.blog .logo a {
+  border-bottom: none;
+}
+
+.blog .logo a:hover {
+  color: #2f4c54;
 }
 
 
@@ -208,6 +193,19 @@ nav ul li:hover>ul {
 }
 
 
+/*=== Home ===*/
+
+.intro {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.title {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+
 /*=== About ===*/
 
 .large {
@@ -219,6 +217,25 @@ nav ul li:hover>ul {
   margin-top: 0.8em;
   margin-bottom: 0.3em;
 }
+
+
+/*=== About ===*/
+
+.portfolio-item {
+  margin-bottom: 2em;
+}
+
+.odd img {
+  float: right;
+}
+
+.even p,
+.even h2,
+.even a {
+  text-align: right;
+}
+
+/*=== Media queries ===*/
 
 @media (max-width: 910px) {
   .six.columns.contact {
@@ -289,13 +306,6 @@ nav ul li:hover>ul {
   }
   .sub-navlist:hover {
     display: block;
-  }
-  .logo-img {
-    display: inline;
-    float: left;
-    width: 10%;
-    padding: 0;
-    margin: 0;
   }
 }
 
