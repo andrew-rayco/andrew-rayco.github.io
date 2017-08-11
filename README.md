@@ -1,2 +1,2 @@
 # andrew-rayco.github.io
-Andrew's blog
+What was once a blog is now a portfolio site. 
